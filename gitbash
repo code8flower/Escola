@@ -1,0 +1,145 @@
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote -v
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote add origin ^C
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote add origin https://github.com/code8flower/woody.git
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git remote -v
+origin  https://github.com/code8flower/woody.git (fetch)
+origin  https://github.com/code8flower/woody.git (push)
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pom.xml
+        src/
+        target/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git add .
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next
+time Git touches it
+warning: in the working copy of 'src/main/java/com/mycompany/universidade/Connec
+tionFactory.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/mycompany/universidade/NewJFr
+ame.form', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/mycompany/universidade/NewJFr
+ame.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/maven-status/maven-compiler-plugin/compi
+le/default-compile/createdFiles.lst', LF will be replaced by CRLF the next time
+Git touches it
+warning: in the working copy of 'target/maven-status/maven-compiler-plugin/compi
+le/default-compile/inputFiles.lst', LF will be replaced by CRLF the next time Gi
+t touches it
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   pom.xml
+        new file:   src/main/java/com/mycompany/universidade/Aluno.java
+        new file:   src/main/java/com/mycompany/universidade/ConnectionFactory.j
+ava
+        new file:   src/main/java/com/mycompany/universidade/NewJFrame.form
+        new file:   src/main/java/com/mycompany/universidade/NewJFrame.java
+        new file:   src/main/java/com/mycompany/universidade/Principal.java
+        new file:   target/classes/com/mycompany/universidade/Aluno.class
+        new file:   target/classes/com/mycompany/universidade/ConnectionFactory.
+class
+        new file:   target/classes/com/mycompany/universidade/NewJFrame$1.class
+        new file:   target/classes/com/mycompany/universidade/NewJFrame.class
+        new file:   target/classes/com/mycompany/universidade/Principal.class
+        new file:   target/maven-status/maven-compiler-plugin/compile/default-co
+mpile/createdFiles.lst
+        new file:   target/maven-status/maven-compiler-plugin/compile/default-co
+mpile/inputFiles.lst
+
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git commit -m "Feat: Criação do repositório"
+[master (root-commit) 22f6b82] Feat: Criação do repositório
+ 13 files changed, 393 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/mycompany/universidade/Aluno.java
+ create mode 100644 src/main/java/com/mycompany/universidade/ConnectionFactory.j
+ava
+ create mode 100644 src/main/java/com/mycompany/universidade/NewJFrame.form
+ create mode 100644 src/main/java/com/mycompany/universidade/NewJFrame.java
+ create mode 100644 src/main/java/com/mycompany/universidade/Principal.java
+ create mode 100644 target/classes/com/mycompany/universidade/Aluno.class
+ create mode 100644 target/classes/com/mycompany/universidade/ConnectionFactory.
+class
+ create mode 100644 target/classes/com/mycompany/universidade/NewJFrame$1.class
+ create mode 100644 target/classes/com/mycompany/universidade/NewJFrame.class
+ create mode 100644 target/classes/com/mycompany/universidade/Principal.class
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-co
+mpile/createdFiles.lst
+ create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-co
+mpile/inputFiles.lst
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$ git push origin master
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (30/30), 11.26 KiB | 1.41 MiB/s, done.
+Total 30 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/code8flower/woody/pull/new/master
+remote:
+To https://github.com/code8flower/woody.git
+ * [new branch]      master -> master
+
+PTALI30223+Alunos@PTALI30223 MINGW64 ~/Documents/NetBeansProjects/dataBase (master)
+$
